@@ -1,0 +1,14 @@
+1. Create a docker file for node project and build it to create a local docker image   
+2. docker build -t multicontainer-nodejs .
+3. Run aws configure
+4. Create a private ecr repo eg: demo
+5. Change the image repo and tag to your ecr repo
+6. docker tag multicontainer-nodejs:latest 328510558004.dkr.ecr.us-east-1.amazonaws.com/demo:latest
+7. login to aws ecr
+8. push the image to private ecr repo
+9. docker push 328510558004.dkr.ecr.us-east-1.amazonaws.com/demo:latest
+10. Create zip of Dockerrun.aws.json, node-js project files and nginx configuration file
+11. zip -r demo.zip *
+12. Attach AmazonEC2ContainerRegistryFullAccess policy to aws-elasticbeanstalk-ec2-role 
+13. Create elasticbeanstalk application and upload zip file choosing multicontainer docker platform on aws elasticbeanstalk
+
