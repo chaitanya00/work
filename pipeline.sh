@@ -47,7 +47,7 @@ eemail('STARTED')
         
         stage('Deploying Zip On Author CRXDE') {
 	               
-                sh "curl -u 'username':'password' -F file=@'+env.WORKSPACE+'/path/to/your/project/*.zip -F force=true -F install=true http://aem-author-or-publish-endpoint/crx/packmgr/service.jsp "
+                sh 'curl -u username:password -F file=@"'+env.WORKSPACE+'/path/to/your/project/*.zip" -F force=true -F install=true http://aem-author-or-publish-endpoint/crx/packmgr/service.jsp'
                 
             
         }
