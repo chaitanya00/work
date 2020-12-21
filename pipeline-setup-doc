@@ -5,4 +5,4 @@
 5. Add webhook on push events on your gitlab account and select gitlab triggeres in jenkins job
 6. Upload the pipeline script on gitlab or create the pipeline on jenkins 
 7. Auto install maven 3.6.3 in jenkins global tool configuration and give it a name eg: maven3.6.3
-
+8. configure your email in manage jenkins -> configure system -> Extended E-mail Notification
