@@ -1,0 +1,8 @@
+1. Install Pipeline Maven Integration Plugin to use maven with pipeline
+2. Add your gitlab credentials to jenkins global credentials for checkout
+3. Create jenkins pipeline job 
+4. Install Gitlab API Plugin, Gitlab Hook Plugin, GitLab Plugin
+5. Add webhook on push events on your gitlab account and select gitlab triggeres in jenkins job
+6. Upload the pipeline script on gitlab or create the pipeline on jenkins 
+7. Auto install maven 3.6.3 in jenkins global tool configuration and give it a name eg: maven3.6.3
+
