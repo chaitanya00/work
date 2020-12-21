@@ -9,6 +9,6 @@
 9. docker push 328510558004.dkr.ecr.us-east-1.amazonaws.com/demo:latest
 10. Create zip of Dockerrun.aws.json, node-js project files and nginx configuration file
 11. zip -r demo.zip *
-12. Attach AmazonEC2ContainerRegistryFullAccess policy to aws-elasticbeanstalk-ec2-role 
-13. Create elasticbeanstalk application and upload zip file choosing multicontainer docker platform on aws elasticbeanstalk
-
+12. Upload zip file to s3 bucket (using aws console or CLI) 
+13. Create cloud formation stack using ebcustom.yml cfn template for deploying nodejs application on multicontainer docker elastic beanstalk
+14. THIS CFN TEMPLATE USES SHARED LOAD BALANCER (APPLICATION ONLY)
